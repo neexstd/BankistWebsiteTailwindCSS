@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankist</title>
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-gray-100 font-poppins">
+    <header class="h-max lg:h-screen">
+      <nav
+        class="relative xl:container px-6 md:px-12 flex justify-between items-center h-32 my-auto mb-20 xl:mb-40"
+      >
+        <div>
+          <img src="img/logo.png" alt="Logo Bankist site" class="w-44" />
+        </div>
+        <div class="hidden lg:block">
+          <ul class="flex items-center text-base">
+            <li class="mr-8">
+              <a href="#features" data-mt-duration="1000">Features</a>
+            </li>
+            <li class="mr-8">
+              <a href="#operations" data-mt-duration="1500">Operations</a>
+            </li>
+            <li class="mr-8">
+              <a href="#testimonials" data-mt-duration="2000">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:hidden absolute md:top-10 right-0">
+          <button id="button-burger">
+            <div class="w-12 h-1 mb-1 bg-black rounded-full"></div>
+            <div class="w-12 h-1 mb-1 bg-black rounded-full"></div>
+            <div class="w-5 h-1 bg-black rounded-full"></div>
+          </button>
+        </div>
+      </nav>
+      <section>
+        <div
+          class="hero block xl:flex lg:container justify-center items-center px-10 xl:px-20 xl:my-20 text-center xl:text-left"
+        >
+          <div class="relative">
+            <h1
+              class="text-5xl md:text-6xl font-bold text-brown relative leading-snug mb-14 xl:mb-7"
+            >
+              When
+              <span
+                class="relative after:-z-10 md:after:block after:content-['*'] after:text-transparent after:absolute after:w-[268px] after:bg-gradient-to-tl after:from-greenForElem after:to-darkGreenForElem/50 after:hidden md:after:-right-2 after:top-4 after:-skew-x-12"
+                >banking</span
+              >
+              meets
+              <span
+                class="relative after:-z-10 md:after:block after:content-['*'] after:text-transparent after:absolute after:w-[340px] after:bg-gradient-to-tl after:from-greenForElem after:to-darkGreenForElem/50 after:hidden after:-right-2 after:top-4 after:-skew-x-12"
+                >minimalist</span
+              >
+            </h1>
+            <p class="mb-7 text-2xl font-medium text-brown">
+              A simpler banking experience for a simpler life.
+            </p>
+            <a href="#" class="border-b border-green-400 text-green-400 text-xl"
+              >Learn more ↓</a
+            >
+          </div>
+          <div class="max-w-md mx-auto my-20 xl:my-0 xl:mx-0">
+            <img src="img/hero.png" alt="" />
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="py-5 px-14 my-20 bg-green-400 rounded-full text-black font-bold text-lg open-modal"
+          >
+            Get started
+          </button>
+        </div>
+      </section>
+    </header>
+
+    <main class="xl:container xl:mx-auto">
+      <section
+        id="features"
+        class="mx-auto lg:w-9/12 my-20 xl:my-40 md:py-10 lg:py-40 xl:py-0"
+      >
+        <div class="px-16 mb-16">
+          <h2 class="text-green-400 uppercase font-semibold mb-5 text-lg">
+            Features
+          </h2>
+          <h3 class="text-4xl font-medium text-brown leading-snug">
+            Everything you need in a modern bank<br />
+            and more.
+          </h3>
+        </div>
+        <div
+          class="lg:grid grid-cols-2 lg:gap-20 items-center text-center lg:text-left mx-auto xl:pt-20 w-9/12 xl:w-full flex flex-col"
+        >
+          <style>
+            .blur-up {
+              -webkit-filter: blur(20px);
+              filter: blur(20px);
+              transition: filter 100ms, -webkit-filter 400ms;
+            }
+
+            .blur-up.lazyloaded {
+              -webkit-filter: blur(0);
+              filter: blur(0);
+            }
+          </style>
+          <div>
+            <img
+              data-expand="-250"
+              src="img/digital-lazy.jpg"
+              data-src="img/digital.jpg"
+              alt="Digital"
+              class="w-full mt-20 lazyload blur-up"
+            />
+          </div>
+          <div class="lg:w-9/12 mx-auto">
+            <div class="h-12 w-12 bg-green/30 rounded-full"></div>
+            <h5 class="font-bold text-xl mt-5">100% digital bank</h5>
+            <p class="mt-5 font-extralight">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              alias sint quos? Accusantium a fugiat porro reiciendis saepe
+              quibusdam debitis ducimus.
+            </p>
+          </div>
+
+          <div class="block lg:hidden">
+            <img
+              data-expand="-250"
+              src="img/grow-lazy.jpg"
+              data-src="img/grow.jpg"
+              alt=""
+              class="w-full mt-20 blur-up lazyload"
+            />
+          </div>
+          <div class="lg:w-9/12 mx-auto">
+            <div class="h-12 w-12 bg-green/30 rounded-full"></div>
+            <h5 class="font-bold text-xl mt-5">Watch your money grow</h5>
+            <p class="mt-5 font-extralight">
+              Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+              inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+              quibusdam!
+            </p>
+          </div>
+          <div class="hidden lg:block">
+            <img
+              data-expand="-250"
+              src="img/grow-lazy.jpg"
+              data-src="img/grow.jpg"
+              alt="Grow"
+              class="w-full mt-20 blur-up lazyload"
+            />
+          </div>
+
+          <div>
+            <img
+              data-expand="-250"
+              src="img/card-lazy.jpg"
+              data-src="img/card.jpg"
+              alt="Card"
+              class="w-full mt-20 blur-up lazyload"
+            />
+          </div>
+          <div class="w-9/12 mx-auto">
+            <div class="h-12 w-12 bg-green/30 rounded-full"></div>
+            <h5 class="font-bold text-xl mt-5">Free debit card included</h5>
+            <p class="mt-5 font-extralight">
+              Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+              eveniet consequatur odit quam quos possimus assumenda dicta fuga
+              inventore ab.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="operations"
+        class="lg:w-9/12 mx-auto my-20 xl:my-52 relative h-fit"
+      >
+        <div class="px-16 mb-16">
+          <h2 class="text-green-400 uppercase font-semibold mb-5 text-lg">
+            Operation
+          </h2>
+          <h3 class="text-4xl font-medium text-brown leading-snug">
+            Everything as simple as possible, but <br />
+            no simpler.
+          </h3>
+        </div>
+        <div
+          class="w-9/12 mx-auto flex m-7 justify-center items-center gap-1 md:gap-6 font-semibold"
+        >
+          <button
+            id="first-tab-open"
+            class="py-2 md:py-3 px-5 bg-yellow-300 rounded-full md:w-3/12 xl:w-4/12 anime"
+          >
+            01 Instant Transfers
+          </button>
+          <button
+            id="second-tab-open"
+            class="py-2 md:py-3 px-5 bg-green-400 rounded-full md:w-3/12 xl:w-4/12"
+          >
+            02 Instant Loans
+          </button>
+          <button
+            id="third-tab-open"
+            class="py-2 md:py-3 px-5 bg-red-400 rounded-full md:w-3/12 xl:w-4/12"
+          >
+            03 Instant Closing
+          </button>
+        </div>
+        <div id="first-tab" class="transition-all duration-300">
+          <div
+            class="w-9/12 xl:w-10/12 mx-auto block text-center xl:text-start xl:flex items-center gap-7"
+          >
+            <div
+              class="h-20 w-20 rounded-full bg-yellow-100 mx-auto xl:mx-0 my-10 xl:my-0"
+            ></div>
+            <h5 class="text-2xl font-medium p-10 xl:w-[80%]">
+              Tranfser money to anyone, instantly! <br class="xl:hidden" />
+              No fees, no BS.
+            </h5>
+          </div>
+          <div
+            class="w-9/12 mx-auto mx:mx-0 xl:ml-28 font-extralight leading-loose text-center xl:text-left"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div
+          id="second-tab"
+          class="hidden-value transition-all duration-300 h-0"
+        >
+          <div
+            class="w-9/12 xl:w-10/12 mx-auto block text-center xl:text-start xl:flex items-center gap-7"
+          >
+            <div
+              class="h-20 w-20 rounded-full bg-green-400 mx-auto xl:mx-0 my-10 xl:my-0"
+            ></div>
+            <h5 class="text-2xl font-medium p-10 xl:w-[80%]">
+              Buy a home or make your dreams come true, <br class="xl:hidden" />
+              with instant loans.
+            </h5>
+          </div>
+          <div
+            class="w-9/12 mx-auto mx:mx-0 xl:ml-28 font-extralight leading-loose text-center xl:text-left"
+          >
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <div
+          id="third-tab"
+          class="hidden-value transition-all duration-300 h-0"
+        >
+          <div
+            class="w-9/12 xl:w-10/12 mx-auto block text-center xl:text-start xl:flex items-center gap-7"
+          >
+            <div
+              class="h-20 w-20 rounded-full bg-red-400 mx-auto xl:mx-0 my-10 xl:my-0"
+            ></div>
+            <h5 class="text-2xl font-medium p-10 xl:w-[80%]">
+              No longer need your account? No problem! <br class="xl:hidden" />
+              Close it instantly.
+            </h5>
+          </div>
+          <div
+            class="w-9/12 mx-auto mx:mx-0 xl:ml-28 font-extralight leading-loose text-center xl:text-left"
+          >
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="lg:w-9/12 mx-auto my-20 xl:py-20">
+        <div class="px-16 mb-16">
+          <h2 class="text-green-400 uppercase font-semibold mb-5 text-lg">
+            Not sure yet?
+          </h2>
+          <h3 class="text-4xl font-medium text-brown leading-snug">
+            Millions of Bankists are already making <br />
+            their lifes simpler.
+          </h3>
+        </div>
+
+        <!-- слайдер начало -->
+        <!-- Slider main container -->
+        <div class="swiper h-fit py-20">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide relative">
+              <div class="text-[13rem] absolute text-green-400 -top-20 left-14">
+                &#8220;
+              </div>
+              <div
+                class="flex translate-x-[25%] flex-col w-[70%] justify-center"
+              >
+                <h5 class="text-2xl my-5 font-medium">
+                  Best financial decision ever!
+                </h5>
+                <p class="font-extralight leading-loose mt-10 md:mt-0">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Accusantium quas quisquam non? Quas voluptate nulla minima
+                  deleniti optio ullam nesciunt, numquam corporis et asperiores
+                  laboriosam sunt, praesentium suscipit blanditiis.
+                  Necessitatibus id alias reiciendis, perferendis facere
+                  pariatur dolore veniam autem esse non voluptatem saepe
+                  provident nihil molestiae.
+                </p>
+                <div
+                  class="flex items-center gap-5 w-11/12 md:w-8/12 xl:w-6/12 mt-10 md:m-10"
+                >
+                  <img
+                    src="img/user-1.jpg"
+                    alt=""
+                    class="rounded-full w-16 h-16"
+                  />
+                  <div>
+                    <h6>Aarav Lynn</h6>
+                    <p>San Francisco, USA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="text-[13rem] absolute text-green-400 -top-20 left-14">
+                &#8220;
+              </div>
+              <div
+                class="flex translate-x-[25%] flex-col w-[70%] justify-center"
+              >
+                <h5 class="text-2xl my-5 font-medium">
+                  The last step to becoming a complete minimalist
+                </h5>
+                <p class="font-extralight leading-loose mt-10 md:mt-0">
+                  Quisquam itaque deserunt ullam, quia ea repellendus provident,
+                  ducimus neque ipsam modi voluptatibus doloremque, corrupti
+                  laborum. Incidunt numquam perferendis veritatis neque
+                  repellendus. Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Illo deserunt exercitationem deleniti.
+                </p>
+                <div
+                  class="flex items-center gap-5 w-11/12 md:w-8/12 xl:w-6/12 mt-10 md:m-10"
+                >
+                  <img
+                    src="img/user-2.jpg"
+                    alt=""
+                    class="rounded-full w-16 h-16"
+                  />
+                  <div>
+                    <h6>Miyah Miles</h6>
+                    <p>London, UK</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="text-[13rem] absolute text-green-400 -top-20 left-14">
+                &#8220;
+              </div>
+              <div
+                class="flex translate-x-[25%] flex-col w-[70%] justify-center"
+              >
+                <h5 class="text-2xl my-5 font-medium">
+                  Finally free from old-school banks
+                </h5>
+                <p class="font-extralight leading-loose mt-10 md:mt-0">
+                  Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+                  incidunt commodi architecto numquam omnis nulla autem,
+                  necessitatibus blanditiis modi similique quidem. Odio aliquam
+                  culpa dicta beatae quod maiores ipsa minus consequatur error
+                  sunt, deleniti saepe aliquid quos inventore sequi.
+                  Necessitatibus id alias reiciendis, perferendis facere.
+                </p>
+                <div
+                  class="flex items-center gap-5 w-11/12 md:w-8/12 xl:w-6/12 mt-10 md:m-10"
+                >
+                  <img
+                    src="img/user-3.jpg"
+                    alt=""
+                    class="rounded-full w-16 h-16"
+                  />
+                  <div>
+                    <h6>Francisco Gomes</h6>
+                    <p>Lisbon, Portugal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination hidden md:block"></div>
+          <style>
+            .swiper-pagination-bullet-active {
+              background-color: black;
+            }
+          </style>
+          <!-- If we need navigation buttons -->
+          <div
+            class="swiper-button-prev after:content-[''] text-4xl text-black"
+          >
+            <button>&#8592;</button>
+          </div>
+          <div
+            class="swiper-button-next after:content-[''] text-4xl text-black"
+          >
+            <button>&#8594;</button>
+          </div>
+        </div>
+        <!-- слайдер конец -->
+      </section>
+    </main>
+    <footer class="bg-footerPrimary text-center text-white py-28">
+      <div class="w-9/12 mx-auto">
+        <div>
+          <h3 class="text-4xl font-medium leading-snug">
+            The best day to join Bankist was one<br class="hidden xl:block" />
+            year ago. The second best is today!
+          </h3>
+          <button
+            class="py-5 px-14 my-20 bg-green-400 rounded-full text-black font-bold text-lg open-modal"
+          >
+            Open your free account today!
+          </button>
+        </div>
+      </div>
+      <div>
+        <ul
+          class="md:flex justify-center gap-10 my-14 font-extralight xl:w-full w-9/12 mx-auto"
+        >
+          <li class="my-4"><a href="#">About</a></li>
+          <li class="my-4"><a href="#">Pricing</a></li>
+          <li class="my-4"><a href="#">Terms of Use</a></li>
+          <li class="my-4"><a href="#">Privacy Policy</a></li>
+          <li class="my-4"><a href="#">Careers</a></li>
+          <li class="my-4"><a href="#">Blog</a></li>
+          <li class="my-4"><a href="#">Contact Us</a></li>
+        </ul>
+        <img src="img/icon.png" alt="" class="mx-auto pb-14 xl:pt-0 w-12" />
+        <p class="font-extralight text-white/40 text-sm w-9/12 mx-auto">
+          © Copyright by <a href="#" class="text-white">Jonas Schmedtmann</a>.
+          Use for learning or your portfolio. Don't use to teach. Don't claim as
+          your own product.
+        </p>
+      </div>
+    </footer>
+
+    <!-- modal -->
+    <div
+      id="modal-window"
+      class="hidden-value transition-all duration-300 fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] sm:w-[90%] md:w-[70%] lg:w-[50%] xl:w-[30%] bg-gray-100 z-20 text-brown p-14"
+    >
+      <div class="relative">
+        <h2 class="relative text-3xl font-bold leading-normal z-20">
+          Open your bank account<br />
+          in just
+          <span
+            class="relative after:-z-10 md:after:block after:content-['*'] after:text-transparent after:absolute after:w-[160px] after:bg-gradient-to-tl after:from-greenForElem after:to-darkGreenForElem/50 after:hidden md:after:-right-1 after:top-0 after:-skew-x-12"
+            >5 minutes</span
+          >
+        </h2>
+
+        <button
+          id="modal-close"
+          class="absolute -top-7 -right-5 text-4xl"
+          aria-label="Закрыть"
+        >
+          ×
+        </button>
+      </div>
+
+      <form
+        class="grid grid-cols-3 gap-5 my-10 w-[100%] md:w-[80%] mx-auto items-center"
+      >
+        <label class="col-span-1"> First Name </label>
+        <input
+          type="email"
+          class="col-span-2 h-10 drop-shadow-xl rounded-lg px-2"
+        />
+        <label class="col-span-1"> Last Name </label>
+        <input
+          type="email"
+          class="col-span-2 h-10 drop-shadow-xl rounded-lg px-2"
+        />
+        <label class=""> Email Adress </label>
+        <input
+          type="email"
+          class="col-span-2 h-10 drop-shadow-xl rounded-lg px-2"
+        />
+      </form>
+
+      <div class="flex justify-center">
+        <button class="py-3 px-10 bg-green-400 rounded-full font-bold">
+          Next step &#8594;
+        </button>
+      </div>
+      <!-- </dialog> -->
+      <!-- flex justify-center gap-5 w-[70%] mx-auto -->
+    </div>
+    <div
+      id="overlay-modal"
+      class="hidden-value fixed top-0 left-0 w-full h-full bg-black/50 backdrop-blur-lg z-10 transition-all ease-in duration-75"
+    ></div>
+    <!-- Modal end -->
+
+    <!-- Burger menu inner start -->
+    <div
+      id="burger-menu"
+      class="hidden-value transition-all duration-300 fixed top-0 right-0 sm:w-[80%] md:w-[50%] lg:w-[50%] xl:w-[50%] bg-gray-100 z-20 text-brown p-14 h-full"
+    >
+      <div class="relative">
+        <button
+          id="burger-close"
+          class="absolute -top-7 -right-5 text-4xl close-burgermenu"
+          aria-label="Закрыть"
+        >
+          ×
+        </button>
+      </div>
+      <ul class="text-2xl flex flex-col gap-8 justify-center h-1/2">
+        <li>
+          <a class="close-burgermenu" href="#features" data-mt-duration="1000"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a class="close-burgermenu" href="#operations" data-mt-duration="1500"
+            >Operations</a
+          >
+        </li>
+        <li>
+          <a
+            class="close-burgermenu"
+            href="#testimonials"
+            data-mt-duration="2000"
+            >Testimonials</a
+          >
+        </li>
+        <li>
+          <button
+            class="bg-green-400 px-6 py-3 rounded-full open-modal close-burgermenu"
+          >
+            Open account
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div
+      id="burger-overlay"
+      class="hidden-value fixed top-0 left-0 w-full h-full bg-black/50 backdrop-blur-lg z-10 transition-all ease-in duration-75 close-burgermenu"
+    ></div>
+    <!-- Burger menu inner end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moveTo/1.8.2/moveTo.min.js"></script>
+    <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

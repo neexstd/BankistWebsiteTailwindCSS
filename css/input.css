@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hidden-value {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@keyframes buttonUp {
+  from {
+    margin-bottom: 0;
+  }
+  to {
+    margin-bottom: 28px;
+  }
+}
+
+.anime {
+  position: relative;
+  transition: all 0.3s;
+  transform: translateY(-20%);
+}
+
+.unAnime {
+  position: relative;
+  transition: all 0.3s;
+  transform: translateY(0%);
+}
