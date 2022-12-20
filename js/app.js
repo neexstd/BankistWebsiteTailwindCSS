@@ -58,6 +58,10 @@ buttonsToCloseBurgerMenu.forEach((el) =>
 btnBurger.addEventListener("click", openBurger);
 closeModal.addEventListener("click", closeModalWindow);
 overlay.addEventListener("click", closeModalWindow);
+
+// табы
+// TODO: рефактор
+
 btnFirstTab.addEventListener("click", () => {
   openTabs([firstTab]);
   closeTabs([secondTab, thirdTab]);
